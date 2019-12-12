@@ -9,7 +9,7 @@ discord==1.0.1
 discord.py==1.0.1
 idna==2.8
 kiwisolver==1.0.1
-lyricsgenius==1.8.2
+lyricsgenius==1.8.0
 matplotlib==3.0.1
 multidict==4.5.2
 numpy==1.15.3
