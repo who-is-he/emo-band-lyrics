@@ -1,8 +1,10 @@
-import codecs, credentials, re
-import lyricsgenius
+import codecs, re, lyricsgenius
+from os import environ
+
+GENIUSKEY = environ['GENIUSKEY']
 
 path = 'artists.txt'
-genius = lyricsgenius.Genius(credentials.GENIUSKEY)
+genius = lyricsgenius.Genius(GENIUSKEY)
 genius.remove_section_headers = True
 # genius.verbose = False
 genius.skip_non_songs = True
