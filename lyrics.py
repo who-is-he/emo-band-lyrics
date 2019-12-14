@@ -10,7 +10,7 @@ genius.remove_section_headers = True
 genius.skip_non_songs = True
 
 with codecs.open(path, 'r', encoding='utf-8', errors='ignore') as f:
-    with codecs.open('corpus.txt', 'w', encoding='utf-8', errors='ignore') as out:
+    with codecs.open('dict.txt', 'w', encoding='utf-8', errors='ignore') as out:
         for line in f:
             if line[0] == '#':
                 continue

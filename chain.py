@@ -1,7 +1,7 @@
 import numpy as np
 import random
 
-def walk_graph(graph, distance=15, start_node=None):
+def walk_graph(graph, distance=10, start_node=None):
     if distance <= 0:
         return []
 

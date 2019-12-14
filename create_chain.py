@@ -1,14 +1,15 @@
 import codecs, json
 from collections import defaultdict
 
-path = 'corpus.txt'
+path = 'dict.txt'
+replace_chars = "”\"()[]\{}\u6969"
 
 with codecs.open(path, 'r', encoding='utf-8', errors='ignore') as f:
     text = f.read()
-    text = text.replace("”", '')
-    text = text.replace('"', '')
-    text = text.replace('(', '')
-    text = text.replace(')', '')
+
+    for c in replace_chars:
+        text = text.replace(c, '')
+
     tokens = [
         word
         for word in text.split()
