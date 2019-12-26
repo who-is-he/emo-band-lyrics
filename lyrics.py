@@ -1,5 +1,4 @@
 import codecs, re, lyricsgenius
-from os import environ
 
 GENIUSKEY = environ['GENIUSKEY']
 

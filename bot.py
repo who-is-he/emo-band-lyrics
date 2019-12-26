@@ -1,4 +1,4 @@
-import tweepy, time, sys
+import tweepy, time
 from creative_process import compose
 from credentials import *
 
