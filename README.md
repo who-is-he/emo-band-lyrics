@@ -25,8 +25,9 @@ GENIUSKEY = 'genius key' # optional
 ```
 
 ## Usage
-Once the bot is set up, it is fairly maintenance free. In order to add more lyrics, append artists.txt with desired artists. Then, run lyrics.py to generate a new dictionary. This process may take some time. After a new dictionary is made, run crate_chain.py to update the json file containing the chain. 
+Once the bot is set up, it is fairly maintenance free. In order to add more lyrics, append artists.txt with desired artists. Then, run lyrics.py to generate a new dictionary. This process may take some time. After a new dictionary is made, run crate_chain.py to update the json file containing the chain. In create_chain.py, adjusting `LENGTH` will adjust the like-ness of keys stored in the Markov chain. Higher values will create more drastically unoriginal lyrics.
 
 ## References
 [How to write a twitter bot with python and tweepy](https://dototot.com/how-to-write-a-twitter-bot-with-python-and-tweepy/)
+
 [Build a Markov Chain Sentence Generator in 20 lines of Python](https://www.jeffcarp.com/posts/2019/markov-chain-python/)
