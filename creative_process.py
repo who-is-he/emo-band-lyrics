@@ -16,7 +16,7 @@ def compose():
                 last_word = word_list[-1] if len(word_list) > 0 else None
                 new_line = ' '.join(walk_graph(
                     markov_graph, 
-                    distance=random.randint(3, 12), 
+                    distance=random.randint(2, 6), 
                     start_node=last_word
                 ))
                 new_line += '\n'
